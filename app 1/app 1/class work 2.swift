@@ -9,6 +9,7 @@ import SwiftUI
 
 struct class_work_2: View {
     var body: some View {
+        
         ZStack{
             Image("gradient wallpaper")
                 .resizable()
@@ -45,52 +46,65 @@ struct class_work_2: View {
                 }.padding()
                 Divider()
                     VStack{
-                    HStack{
-                        Text(" 3:14 AM")
-                        Spacer()
-                        Text("الفجر ")
-                    
-                    }.padding()
-                        Divider()
-                        HStack{
-                          Text("5:08 AM")
-                            Spacer()
-                            Text("الشروق")
-                        }.padding()
-                        Divider()
-                        HStack{
-                            Text("11:54 AM")
-                            Spacer()
-                            Text("الظهر")
-                        }.padding()
-                        Divider()
-                        HStack{
-                            Text("3:30 PM")
-                            Spacer()
-                                Text("العصر")
-                        }.padding()
-                        Divider()
-                        HStack{
-                            Text("6:40 PM")
-                            Spacer()
-                            Text("المغرب")
-                        }.padding()
+                        VStack{
+                            HStack{
+                                Text(" 3:14 AM")
+                                Spacer()
+                                Text("الفجر ")
+                            
+                            }.padding()
+                                Divider()
+                        }
+                        VStack{
+                            HStack{
+                              Text("5:08 AM")
+                                Spacer()
+                                Text("الشروق")
+                            }.padding()
                             Divider()
+                        }
+                        VStack{
+                            HStack{
+                                Text("11:54 AM")
+                                Spacer()
+                                Text("الظهر")
+                            }.padding()
+                            Divider()
+                        }
+                        VStack{
+                            HStack{
+                                Text("3:30 PM")
+                                Spacer()
+                                    Text("العصر")
+                            }.padding()
+                            Divider()
+                        }
+                        VStack{
+                            HStack{
+                                Text("6:40 PM")
+                                Spacer()
+                                Text("المغرب")
+                            }.padding()
+                                Divider()
+                        }
+                        VStack{
+                            HStack{
+                                Text("8:06 PM")
+                                Spacer()
+                                Text("العشاء")
+                            }.padding()
+                        }
                 
                 }.background(.white.opacity(0.2))
                     Divider()
-                    HStack{
-                        Text("8:06 PM")
-                        Spacer()
-                        Text("العشاء")
-                    }.padding()
-                        .background(.white.opacity(0.2))
+                    
+
                         
                     
                    
                 }
             }.foregroundColor(Color.white).font(.system(size: 29, weight: .medium, design: .rounded))
-            
+        
             
         }
     }
@@ -104,9 +118,7 @@ struct class_work_2: View {
         class_work_2()
     
     }
-
-
-
-}
     
 
+                    
+        }
